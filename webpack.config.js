@@ -15,7 +15,7 @@ module.exports = {
     host: "localhost",
     watchFiles: 'index.html',
   },
-  context: path.join(__dirname, 'src'),
+  context: path.join(__dirname, 'docs'),
   plugins: [
     new CopyPlugin({
       patterns: [
