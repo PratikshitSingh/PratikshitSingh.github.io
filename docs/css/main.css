@@ -1,14 +1,3 @@
-$theme-color: #36454F;
-$background-color: #000;
-$font-color: #fff;
-$font-family: 'Poppins', sans-serif;
-
-@mixin ps {
-  font-size: 1.25em;
-  font-family: $font-family;
-  text-align: center;
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding: 6vh;
@@ -17,8 +6,8 @@ html {
 body {
   margin: 0;
   padding-top: 5%;
-  background-color: $background-color;
-  color: $font-color;
+  background-color: #000;
+  color: #fff;
 }
 
 .centered {
@@ -29,26 +18,24 @@ body {
   list-style-type: circle;
   margin-left: -2em;
   font-size: medium;
- }
+}
 
- .job-title{
+.job-title {
   font-size: 2.4vh;
- }
-  
-// Navbar
+}
+
 #navbar {
   transition: 0.05s;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 2%;
-  background-color: $background-color;
-  color: $font-color;
+  background-color: #000;
+  color: #fff;
   height: 10vh;
 }
 
@@ -65,7 +52,7 @@ body {
 #navbar-hb-open {
   display: none;
   font-size: 4vh;
-  color: $font-color;
+  color: #fff;
   padding-right: 8vw;
 }
 
@@ -74,15 +61,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $font-color;
-  background-color: $background-color  !important;
+  color: #fff;
+  background-color: #000 !important;
   z-index: 9;
 }
 
 .navbar-link {
-  color: $font-color;
+  color: #fff;
   font-size: 18px;
-  font-family: $font-family;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   cursor: pointer;
   padding: 0.5em 1em;
@@ -90,7 +77,7 @@ body {
 }
 
 .navbar-link-active {
-  background-color: $theme-color;
+  background-color: #36454f;
 }
 
 .navbar-link:hover {
@@ -101,7 +88,6 @@ body {
   text-decoration: underline;
 }
 
-// Video Section
 #video-content {
   position: relative;
   width: 100vw;
@@ -115,9 +101,9 @@ body {
 }
 
 #video-overlay-text {
-  color: $font-color;
+  color: #fff;
   font-size: 1.5vw;
-  font-family: $font-family;
+  font-family: "Poppins", sans-serif;
   position: absolute;
   text-align: center;
   width: 50%;
@@ -128,7 +114,7 @@ body {
 }
 
 #video-content:before {
-  content: '';
+  content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
@@ -139,22 +125,30 @@ body {
 }
 
 #ps-about {
-  @include ps;
+  font-size: 1.25em;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   padding: 8vh 20vw;
 }
 
 #ps-experience {
-  @include ps;
+  font-size: 1.25em;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   padding: 10vh 20vw;
 }
 
 #ps-projects {
-  @include ps;
+  font-size: 1.25em;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   padding: 12vh 8vw;
 }
 
 #ps-travel {
-  @include ps;
+  font-size: 1.25em;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
   padding: 12vh 0vw;
 }
 
@@ -177,16 +171,15 @@ body {
 }
 
 #compare-heading {
-    align-self: center;
-    font-family: $font-family;
+  align-self: center;
+  font-family: "Poppins", sans-serif;
 }
 
-// Fixed Background
 #fixed-bg-img {
   width: 100%;
   height: 20vh;
   font-size: 1.5vh;
-  font-family: $font-family;
+  font-family: "Poppins", sans-serif;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -197,7 +190,6 @@ body {
   align-items: center;
 }
 
-// Modal Styles
 #modal {
   top: 0;
   left: 0;
@@ -213,17 +205,17 @@ body {
 #modal-container {
   height: 50vh;
   width: 75vw;
-  background-color: $font-color;
+  background-color: #fff;
   margin: 10% auto;
   padding: 2%;
   border: 1px solid grey;
 }
 
 #modal-open {
-  background-color: $theme-color;
-  color: $font-color;
+  background-color: #36454f;
+  color: #fff;
   font-size: 18px;
-  font-family: $font-family;
+  font-family: sans-serif;
   text-decoration: none;
   cursor: pointer;
   padding: 0.5em 1em;
@@ -232,7 +224,7 @@ body {
 }
 
 #modal-open:hover {
-  background-color: #36454F;
+  background-color: #36454f;
 }
 
 #modal-close {
@@ -240,7 +232,7 @@ body {
   cursor: pointer;
   background-color: transparent;
   font-size: 2em;
-  border: none
+  border: none;
 }
 
 #modal-row {
@@ -251,13 +243,13 @@ body {
 }
 
 #modal-card {
-  color: $background-color;
-  background-color: $font-color;
+  color: #000;
+  background-color: #fff;
   text-align: center;
 }
 
 #modal-card {
-  color: $background-color;
+  color: #000;
   background-color: transparent;
   text-align: center;
 }
@@ -266,14 +258,10 @@ body {
   height: 25vh;
 }
 
-// Carousel Styles
 #carousel {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   position: relative;
   width: 100%;
-  height: 70vh;  /* 50% of the viewport height */
+  height: 70vh; /* 50% of the viewport height */
   overflow: hidden;
 }
 
@@ -296,7 +284,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
 
-  color: $font-color;
+  color: #fff;
   font-weight: 800;
   position: absolute;
   margin-left: 10px;
@@ -313,7 +301,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
 
-  color: $font-color;
+  color: #fff;
   font-weight: 800;
   position: absolute;
   margin-right: 10px;
@@ -325,7 +313,6 @@ body {
   cursor: pointer;
 }
 
-// Multicolumn Styles
 * {
   box-sizing: border-box;
 }
@@ -346,30 +333,28 @@ body {
   width: 30%;
   margin: 2vh 1%;
   padding: 1% 1%;
-  color: $background-color;
-  background-color: $font-color;
+  color: #000;
+  background-color: #fff;
   border-radius: 10px;
-  font-family: $font-family;
+  font-family: sans-serif;
 }
 
-.compare-column>img {
+.compare-column > img {
   height: 20vh;
   border-radius: 10px;
 }
 
-#github-logo{
+#github-logo {
   width: 4wh;
   height: 4vh;
 }
 
-
 @media screen and (max-width: 600px) {
   .compare-column {
-      width: 100%;
+    width: 100%;
   }
 }
 
-// Footer Styles
 #footer {
   width: 100%;
   margin-top: 5vh;
@@ -378,63 +363,59 @@ body {
 }
 
 #footer a {
-  color: $theme-color;
+  color: #36454f;
   font-size: 26px;
   margin: 1% 1%;
 }
 
-#footer-text{
+#footer-text {
   color: #46494b;
   font-size: 24px;
 }
 
-
-// Media Queries
-// Responsive Navbar
 @media screen and (max-width: 500px) {
   #navbar-links {
-      display: none;
+    display: none;
   }
 
   #navbar-hb-open {
-      display: block;
+    display: block;
   }
 
   #navbar-links-hb {
-      display: none;
-      position: fixed;
-      top: 10vh;
-      width: 95vw;
-      height: 30vh;
-      background-color: $font-color;
-      color: $background-color;
-      z-index: 9;
+    display: none;
+    position: fixed;
+    top: 10vh;
+    width: 95vw;
+    height: 30vh;
+    background-color: #fff;
+    color: #000;
+    z-index: 9;
   }
 }
 
 @media screen and (min-width: 501px) {
   #navbar-links-hb {
-      display: none !important;
+    display: none !important;
   }
 }
 
-// Animations
 @keyframes slideFromLeft {
   0% {
-      margin-right: 100%;
+    margin-right: 100%;
   }
 
   100% {
-      margin-right: 0%;
+    margin-right: 0%;
   }
 }
 
 @keyframes slideFromRight {
   0% {
-      margin-left: -100%;
+    margin-left: -100%;
   }
 
   100% {
-      margin-left: 0%;
+    margin-left: 0%;
   }
 }

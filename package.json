@@ -14,7 +14,7 @@
     "autoprefixer": "^10.3.3",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.1",
-    "css-loader": "^6.2.0",
+    "css-loader": "^6.8.1",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "postcss": "^8.3.6",
@@ -26,5 +26,8 @@
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+    "style": "^0.0.3"
   }
 }
