@@ -102,11 +102,11 @@ body {
 
 #video-overlay-text {
   color: #fff;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-family: "Poppins", sans-serif;
   position: absolute;
   text-align: center;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   padding-top: 15%;
   top: 2%;
@@ -122,6 +122,46 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.social-buttons {
+position: absolute;
+z-index: 10;
+
+bottom: 30%; /* Adjust as needed for positioning */
+left: 50%;
+transform: translateX(-50%);
+}
+
+.social-button {
+display: inline-block;
+padding: 10px 15px;
+margin: 0 10px;
+color: #fff;
+background-color: #333; /* Default color, will be overridden */
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.social-button i {
+margin-right: 8px;
+}
+
+.social-button.github {
+background-color: #333;
+}
+
+.social-button.github:hover {
+background-color: #6e5494;
+}
+
+.social-button.linkedin {
+background-color: #0077b5;
+}
+
+.social-button.linkedin:hover {
+background-color: #005983;
 }
 
 #ps-about {
@@ -145,7 +185,7 @@ body {
   padding: 12vh 8vw;
 }
 
-#ps-travel {
+#ps-contact {
   font-size: 1.25em;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -183,92 +223,11 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url(../assets/PratikshitSingh.png);
+  background-image: url(../assets/github.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#modal {
-  top: 0;
-  left: 0;
-  z-index: 6;
-  display: none;
-  position: fixed;
-  overflow: auto;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-#modal-container {
-  height: 50vh;
-  width: 75vw;
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 2%;
-  border: 1px solid grey;
-}
-
-#modal-open {
-  background-color: #36454f;
-  color: #fff;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  border: none;
-}
-
-#modal-open:hover {
-  background-color: #36454f;
-}
-
-#modal-close {
-  float: right;
-  cursor: pointer;
-  background-color: transparent;
-  font-size: 2em;
-  border: none;
-}
-
-#modal-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#modal-card {
-  color: #000;
-  background-color: #fff;
-  text-align: center;
-}
-
-#modal-card {
-  color: #000;
-  background-color: transparent;
-  text-align: center;
-}
-
-#modal-card img {
-  height: 25vh;
-}
-
-#carousel {
-  position: relative;
-  width: 100%;
-  height: 70vh; /* 50% of the viewport height */
-  overflow: hidden;
-}
-
-#carousel-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .slideFromLeft {
